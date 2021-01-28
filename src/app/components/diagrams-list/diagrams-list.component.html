@@ -1,1 +1,13 @@
-<p>diagrams-list works!</p>
+<div class="app-diagrams-list">
+    <div class="app-diagrams-list__header">
+        <a href="javascript:void(0)" (click)="addDiagram()">
+            {{'rs-add-diagram' | translate}}
+        </a>
+    </div>
+    <div class="app-diagrams-list__body">
+        <div class="app-diagrams-list__body--items"></div>
+        <div class="app-diagrams-list__body--empty">
+            <img src="../../../assets/img/empty-box.svg" alt="Empty" />
+        </div>
+    </div>
+</div>

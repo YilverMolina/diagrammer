@@ -6,19 +6,26 @@ import { AppComponent } from './app.component';
 import { DiagramsListComponent } from './components/diagrams-list/diagrams-list.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DiagramComponent } from './components/diagrams-list/diagram/diagram.component';
+import { AppTranslateModule } from './app-translate.module';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
     AppComponent,
     DiagramsListComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DiagramComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AppTranslateModule
   ],
-  providers: [],
+  providers: [
+    CookieService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
