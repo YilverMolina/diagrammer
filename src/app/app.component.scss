@@ -1,0 +1,21 @@
+@import '../assets/styles/variables.scss';
+
+.app-layout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        height: 4em;
+    }
+
+    &__body {
+        background-color: #FFF;
+        flex-grow: 1;
+        padding: $space-inset-s;
+    }
+
+    &__footer {
+        height: 2.5em;
+    }
+}

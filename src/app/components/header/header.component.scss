@@ -1,0 +1,19 @@
+@import "../../../assets/styles/variables.scss";
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $space-inset-s;
+  height: 100%;
+  background-color: $color-primary;
+  color: #fff;
+
+  &__left {
+    > a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+  }
+}
