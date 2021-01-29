@@ -50,6 +50,14 @@ export default function ExamplePaletteProvider(create, elementFactory, lassoTool
             });
   
             create.start(event, shape);
+          },
+          dragstart: function() {
+            var shape = elementFactory.createShape({
+              width: 100,
+              height: 80
+            });
+  
+            create.start(event, shape);
           }
         }
       },
@@ -59,6 +67,15 @@ export default function ExamplePaletteProvider(create, elementFactory, lassoTool
         title: 'Create Frame',
         action: {
           click: function() {
+            var shape = elementFactory.createShape({
+              width: 300,
+              height: 200,
+              isFrame: true
+            });
+  
+            create.start(event, shape);
+          },
+          dragstart: function() {
             var shape = elementFactory.createShape({
               width: 300,
               height: 200,

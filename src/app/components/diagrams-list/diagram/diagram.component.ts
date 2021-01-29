@@ -25,6 +25,5 @@ export class DiagramComponent implements OnInit {
     this.diagramId = this.activatedRoute.snapshot.params.diagramId;
     this.cdRef.detectChanges();
     this.processDiagram = new DiagramInstanceFactory().newDiagramEditorInstance(this.diagramId);
-    console.log(this.processDiagram)
   }
 }

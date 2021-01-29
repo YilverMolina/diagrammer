@@ -88,8 +88,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/assets/styles/diagram-js.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           }
