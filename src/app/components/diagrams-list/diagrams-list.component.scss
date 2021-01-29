@@ -4,6 +4,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    padding: $space-inset-s;
 
     &__header {
         height: 2.5em;
